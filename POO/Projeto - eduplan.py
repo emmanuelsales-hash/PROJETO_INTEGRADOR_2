@@ -93,3 +93,9 @@ atividade = Atividade(
     disciplina,
     serie
 )
+
+# ==========================================
+# TESTE
+# ==========================================
+
+atividade.exibir_atividade()

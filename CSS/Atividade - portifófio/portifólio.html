@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portifólio estilizado</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+
+        /* cor de fundo*/
+        body{
+   background-image: linear-gradient(to right, #194fe6, #000000);
+        }
+
+        @keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Começa 100px à direita */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sobe para a posição original */
+  }
+}
+/* inserindo a animação ao HTML */
+.surgir {
+  animation-name: surgir;
+  animation-duration: 0.8s; /* Tempo de duração */
+  animation-timing-function: ease-out; /* Suaviza o final da animação */
+  animation-fill-mode: forwards; /* Mantém o elemento no estado final após a animação terminar */
+}
+
+    </style>
+</head>
+<body>
+    <H1 class="surgir" style="color:rgb(255, 255, 255)"><strong><em> Olá eu me chamo Emmanuel e esse e meu portifólio sobre minha pessoa </em></strong></H1>
+
+    <h2 class="surgir" style="color:rgb(255, 255, 255)"><strong><em> Aqui abaixo tem mais informações sobre mim, meus hobbies, sonhos e lugares que quero ir </em></strong></h2>
+
+    <url>
+    <nav>
+
+        <a href="#" class="link-animado" link="Hobbies.html" > Hobbies </a>
+        <a href="#" class="link-animado" link="Sonhos.html"> Sonhos </a>
+        <a href="#" class="link-animado" link="Lugares.html"> Lugares a ir </a>
+        <a href="#" class="link-animado" link="Mais.html"> Mais </a>
+        
+    </nav>
+    </url>
+
+</body>
+</html>

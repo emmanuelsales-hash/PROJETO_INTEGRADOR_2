@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus sonhos</title>
+    <style>
+
+     body{
+   background-image: linear-gradient(to right, #194fe6, #000000);
+        }
+
+        @keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Começa 100px à direita */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sobe para a posição original */
+  }
+}
+
+/* inserindo a animação ao HTML */
+.surgir {
+  animation-name: surgir;
+  animation-duration: 2s; /* Tempo de duração */
+  animation-timing-function: ease-out; /* Suaviza o final da animação */
+  animation-fill-mode: forwards; /* Mantém o elemento no estado final após a animação terminar */
+}
+
+        /* animação ao passar o mouse em cima do link*/
+        a {
+    text-decoration: none;
+    color: #0077cc;
+    transition: all 0.3s ease;
+}
+
+    </style>
+
+</head>
+<body>
+    <h1 class="surgir" style="color: rgb(255, 255, 255);"><strong><em> Meus sonhos </em></strong></h1>
+
+    <h3><strong><em>Os meus sonhos são três, ser milionário, morar na suíça, e ter um monza caixote turbo carburado. </em></strong></h3>
+
+    <nav>
+        <a :hover link="Portifólio.html"> Voltar </a>
+    </nav>
+</body>
+</html>

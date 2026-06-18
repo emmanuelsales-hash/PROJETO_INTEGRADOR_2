@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus hobbies</title>
+    <link rel="Portifólio.css" href="style.css">
+
+     <style>
+
+     body{
+   background-image: linear-gradient(to right, #194fe6, #000000);
+        }
+
+        @keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Começa 100px à direita */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sobe para a posição original */
+  }
+}
+
+/* inserindo a animação ao HTML */
+.surgir {
+  animation-name: surgir;
+  animation-duration: 2s; /* Tempo de duração */
+  animation-timing-function: ease-out; /* Suaviza o final da animação */
+  animation-fill-mode: forwards; /* Mantém o elemento no estado final após a animação terminar */
+}
+
+    </style>
+
+</head>
+<body>
+    <h1> Meus Hobbies </h1>
+
+    <h2 style="color: f#ffffff"  class="surgir"><strong><em> Eu não sou de fazer muita coisa então meus únicos hobbies são andar de bicicleta e jogar ping pong, eu gosto principalmente de andar por lugares novos e explorar as ruas, apesar de eu gostar muito ultimamente so tenho andado para ir pro IF pois ja andei tanto pela cidade que ja não tem tantos lugares novos para que eu ir, porém em contra patida o ping pong tem me deixado muito viciado ao ponto de contar os minutos durante as aulas para saber quanto tempo falta para acabr para o intervalo começar e eu poder jogar </em></strong></h2>
+
+    <nav>
+         <a :hover link="Portifólio.html"> Voltar </a>
+    </nav>
+</body>
+</html>

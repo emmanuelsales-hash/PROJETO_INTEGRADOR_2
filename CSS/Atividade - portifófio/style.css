@@ -1,3 +1,4 @@
+/*Animação de surgimento.*/
 @keyframes surgir {
     from {
         opacity: 0;
@@ -9,23 +10,35 @@
     }
 }
 
-/* 2. Estilo Base do Link */
 .link-animado {
     display: inline-block;
     text-decoration: none;
-    color: #0077cc;
+    color: #ffffff;
     font-size: 35px;
     font-weight: bold;
     
-    /* Aplica a animação de surgimento ao carregar a página */
     animation: surgir 0.8s ease-out forwards;
     
-    /* Prepara o link para a transição suave do hover (mouse) */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* 3. Efeito de Interação (Zoom ao passar o mouse) */
+/*Efeito de Interação ao passar o mouse por cima do link*/
 .link-animado:hover {
-    color: #0055aa;
+    color: #000000;
     transform: scale(1.0);
 }
+
+/*Alinha tudo deixando no centro.*/
+.div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;  
+}
+
+/* separa os links na horizontal por um espaço de 30px.*/ 
+
+.menu-horizontal {
+  display: flex;
+  gap: 30px; 
+}
+
